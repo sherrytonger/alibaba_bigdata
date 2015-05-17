@@ -74,17 +74,17 @@ balance_in = {}
 balance_out = {}
 for i in balance_info:
     if i[1] in balance_in:
-        balance_in[i[1]] = float(balance_info[4]) + float(balance_in[i[1]])
-        balance_out[i[1]] = float(balance_info[4]) + float(balance_out[i[1]])
+        balance_in[i[1]] = float(i[4]) + float(balance_in[i[1]])
+        balance_out[i[1]] = float(i[4]) + float(balance_out[i[1]])
     else:
-        balance_in[i[1]] = float(balance_info[4])
-        balance_out[i[1]] = float(balance_info[4])
+        balance_in[i[1]] = float(i[4])
+        balance_out[i[1]] = float(i[4])
 print 'counting done.........'
 print 'writing into files.........'
 for i in balance_in:
-    in_file.write(i, balance_in[i],'\n')
+    in_file.write('%s\t%s\n'%(i, balance_in[i]))
 for j in balance_out:
-    out_file.write(j, balance_out[j],'\n')
+    out_file.write('%s\t%s\n'%(j, balance_out[j]))
 print 'done!'
 
 in_file.close()
