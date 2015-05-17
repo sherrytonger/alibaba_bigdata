@@ -75,10 +75,10 @@ balance_out = {}
 for i in balance_info:
     if i[1] in balance_in:
         balance_in[i[1]] = float(i[4]) + float(balance_in[i[1]])
-        balance_out[i[1]] = float(i[4]) + float(balance_out[i[1]])
+        balance_out[i[1]] = float(i[8]) + float(balance_out[i[1]])
     else:
         balance_in[i[1]] = float(i[4])
-        balance_out[i[1]] = float(i[4])
+        balance_out[i[1]] = float(i[8])
 print 'counting done.........'
 print 'writing into files.........'
 for i in balance_in:
