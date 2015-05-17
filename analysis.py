@@ -4,10 +4,10 @@ import codecs
 
 
 filepath = 'dataset/'
-usr_file = filepath+'user_profile_table.txt'
-usr_balance = filepath+'user_balance_table.txt'
-usr_share = filepath+'mfd_day_share_interest.txt'
-bank_file = filepath+'mfd_bank_shibor.txt'
+usr_file = filepath+'user_profile_table.csv'
+usr_balance = filepath+'user_balance_table.csv'
+usr_share = filepath+'mfd_day_share_interest.csv'
+bank_file = filepath+'mfd_bank_shibor.csv'
 
 
 usr_info = []
