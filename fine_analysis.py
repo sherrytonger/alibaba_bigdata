@@ -34,3 +34,5 @@ for i in total_in:
 for j in total_out:
     new_out.write('%s\t%s'%(j[0], j[1]))
 print 'finishing writing......'
+
+
