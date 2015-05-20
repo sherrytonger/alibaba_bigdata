@@ -1,1 +1,4 @@
 dataset/
+*_build/
+*~
+*.native
